@@ -21,9 +21,9 @@ loaddata(){
     this.setState({
       sitedate:res.data.sites
     })
-  }).catch(err){
+  }).catch(err=>{
     alert("error occured while fetching")
-    }
+    })
 }
   render(){
   const data = this.state.sitedate.map((item,i)=>{
